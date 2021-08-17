@@ -93,6 +93,7 @@
       "kind": "app",
       "properties": {
         "minTlsVersion": "1.2",
+        "httpsOnly": true,
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]",
         "siteConfig": {
           "linuxFxVersion": "[parameters('linuxFxVersion')]"
