@@ -53,15 +53,13 @@
       "apiVersion": "2019-06-01",
       "name": "[variables('storageAccountName')]",
       "location": "[parameters('location')]",
-      "properties": {
-           "minimumTlsVersion": "TLS1_2"
-       },
       "sku": {
         "name": "[parameters('storageSKU')]"
       },
       "kind": "StorageV2",
       "properties": {
-        "supportsHttpsTrafficOnly": true
+        "supportsHttpsTrafficOnly": true,
+        "minimumTlsVersion": "TLS1_2"
       }
     },
     {
@@ -94,6 +92,7 @@
       ],
       "kind": "app",
       "properties": {
+        "minTlsVersion": "1.2",
         "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', variables('appServicePlanName'))]",
         "siteConfig": {
           "linuxFxVersion": "[parameters('linuxFxVersion')]"
