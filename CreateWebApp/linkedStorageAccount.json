@@ -38,11 +38,11 @@
       "apiVersion": "2020-06-01",
       "name": "[parameters('storageAccountName')]",
       "location": "[parameters('location')]",
+      "properties": {
+           "minimumTlsVersion": "TLS1_2"
+       },
       "sku": {
         "name": "[parameters('storageSKU')]"
-      },
-       network_rules {
-        default_action="Deny"
       },
       "kind": "StorageV2",
       "properties": {
