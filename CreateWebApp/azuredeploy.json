@@ -53,6 +53,9 @@
       "apiVersion": "2019-06-01",
       "name": "[variables('storageAccountName')]",
       "location": "[parameters('location')]",
+      "properties": {
+           "minimumTlsVersion": "TLS1_2"
+       },
       "sku": {
         "name": "[parameters('storageSKU')]"
       },
