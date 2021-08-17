@@ -20,6 +20,5 @@ steps:
     location: 'North Europe'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/ltueki/AzureRmPipeline-repo/main/CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName SaC'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
