@@ -41,6 +41,9 @@
       "sku": {
         "name": "[parameters('storageSKU')]"
       },
+       network_rules {
+        default_action="Deny"
+      },
       "kind": "StorageV2",
       "properties": {
         "supportsHttpsTrafficOnly": true
