@@ -31,7 +31,7 @@
         "Standard_RAGZRS"
       ],
       "metadata": {
-        "description": "Specify the storage account type."
+        "description": "Specify the storage account type changed."
       }
     },
     "linuxFxVersion": {
